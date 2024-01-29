@@ -1,0 +1,41 @@
+/*
+colores
+*/
+
+.color1 { background-color: #17A2B8; }
+.color2 { background-color: #E83E8C; }
+.color3 { background-color: #17A2B8; }
+.color4 { background-color: #17A2B8; }
+.color5 { background-color: #17A2B8; }
+.color6 { background-color: #17A2B8; }
+
+body * {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0; padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Cabin', sans-serif;
+}
+/*  */
+.logo-font { font-family: 'Lobster', sans-serif; }
+.bg-navbar-propio { background-color:#373A3C ;} 
+footer {
+    background-color: #DC3545;
+}
+#credits {
+    background-color: #373A3C;
+}
+h1, h2, h3, .card-title { text-transform: uppercase;}
+.fs-1x {
+    font-size:3.5em;
+}
+.title { border-bottom: solid 1px #000;}
+.subtitle { font-size: }
+ul { padding-left: 0!important; }
+ul li { list-style: none; }
+ol li { margin-bottom: 15px!important;}
+
+
+/* CAROUSEL */
+.carousel-indicators {  }
+.carousel-indicator { width: 10px; }
