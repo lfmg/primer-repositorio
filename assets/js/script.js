@@ -18,7 +18,24 @@ $(document).ready(function()
                });
      }
 );
-*/
+
+ /*
+    $("#ingredientes").onclick(function(){ $(this).css({ "color": "red" }); });
+     $("#ingredientes").hover(function(){ $(this).css("<a href='#'>Me convertí</a>"); });     
+     $("#ingredientes").dblclick(function(){ $(this).hide('slow'); });
+ */ 
+
+$(document).ready(function(){
+     $(".card-title").click(function(){ 
+          $(".card-text").toggle('slow');
+     });
+     $(".title").click(function(){ 
+          $(this).css({ "color": "red" });
+     });
+     $("#enviar").click(function(){ 
+          alert( "El correo ha sido enviado exitosamente!");
+     });
+});
 
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
@@ -29,9 +46,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
+
 
 /* CAROUSEL*/ 
 const myCarouselElement = document.querySelector('#myCarousel')
@@ -39,15 +54,3 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 2000,
   touch: false
 })
-
-$(document).ready(function(){
-     $("p").dblclick(function(){ $(this).hide('slow');
-     });
-     $("p").click(function(){ $(this).css({
-           "color": "red",
-           "font-size": "2em"
-         });
-     }); });
-
-
-    
